@@ -7,8 +7,8 @@ import (
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello from server on port %s\n", r.Host)
+func handler(res http.ResponseWriter, req *http.Request) {
+	fmt.Fprintf(res, "Hello from server on port %s\n", req.Host)
 }
 
 func main() {
