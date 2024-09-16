@@ -19,3 +19,12 @@ go run main.go --port=XXXX
 ```
 
 You can run multiple instances of the backend server on different ports. Open multiple terminal windows and execute the command in each terminal with a different port for each one:
+
+## Run load balancer
+
+Before running the load balancer, be sure to add the correct url server in the servers variable, then
+
+```bash
+cd src
+go run main.go
+```
